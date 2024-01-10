@@ -16,6 +16,7 @@ import LayoutAnimationCollapseScreen from '../screens/layoutAnimationCollapse';
 import PanResponderScreen from '../screens/panResponder';
 import PanResponderBallScreen from '../screens/panResponderBall';
 import PanResponderModalScreen from '../screens/panResponderModal';
+import PanResponderSliderScreen from '../screens/panResponderSlider';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -57,6 +58,10 @@ const RootStackNavigation = (): JSX.Element => {
       <Stack.Screen
         name="PanResponderModal"
         component={PanResponderModalScreen}
+      />
+      <Stack.Screen
+        name="PanResponderSlider"
+        component={PanResponderSliderScreen}
       />
     </Stack.Navigator>
   );
