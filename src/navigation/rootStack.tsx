@@ -8,6 +8,7 @@ import Header from '../components/header';
 import SnackbarScreen from '../screens/snackbar';
 import DrawerScreen from '../screens/drawer';
 import CollapseScreen from '../screens/collapse';
+import ProgressBarScreen from '../screens/progressBar';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -30,6 +31,7 @@ const RootStackNavigation = (): JSX.Element => {
       <Stack.Screen name="Snackbar" component={SnackbarScreen} />
       <Stack.Screen name="Drawer" component={DrawerScreen} />
       <Stack.Screen name="Collapse" component={CollapseScreen} />
+      <Stack.Screen name="ProgressBar" component={ProgressBarScreen} />
     </Stack.Navigator>
   );
 };
