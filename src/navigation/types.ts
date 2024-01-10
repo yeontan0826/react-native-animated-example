@@ -9,6 +9,9 @@ export type RootStackParamList = {
   Collapse: undefined;
   ProgressBar: undefined;
   Skeleton: undefined;
+  LayoutAnimation: undefined;
+  LayoutAnimationHeader: undefined;
+  LayoutAnimationCollapse: undefined;
 };
 
 export type RootStackProps<RouteName extends keyof RootStackParamList> =

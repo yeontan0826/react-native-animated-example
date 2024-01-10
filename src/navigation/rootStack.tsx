@@ -10,6 +10,9 @@ import DrawerScreen from '../screens/drawer';
 import CollapseScreen from '../screens/collapse';
 import ProgressBarScreen from '../screens/progressBar';
 import SkeletonScreen from '../screens/skeleton';
+import LayoutAnimationScreen from '../screens/layoutAnimation';
+import LayoutAnimationHeaderScreen from '../screens/layoutAnimationHeader';
+import LayoutAnimationCollapseScreen from '../screens/layoutAnimationCollapse';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -34,6 +37,15 @@ const RootStackNavigation = (): JSX.Element => {
       <Stack.Screen name="Collapse" component={CollapseScreen} />
       <Stack.Screen name="ProgressBar" component={ProgressBarScreen} />
       <Stack.Screen name="Skeleton" component={SkeletonScreen} />
+      <Stack.Screen name="LayoutAnimation" component={LayoutAnimationScreen} />
+      <Stack.Screen
+        name="LayoutAnimationHeader"
+        component={LayoutAnimationHeaderScreen}
+      />
+      <Stack.Screen
+        name="LayoutAnimationCollapse"
+        component={LayoutAnimationCollapseScreen}
+      />
     </Stack.Navigator>
   );
 };
