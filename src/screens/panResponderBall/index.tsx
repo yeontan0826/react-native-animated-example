@@ -16,7 +16,7 @@ const PanResponderBallScreen = (): JSX.Element => {
         useNativeDriver: true,
       }).start();
     },
-    onPanResponderRelease: (_, gestureState) => {
+    onPanResponderRelease: () => {
       setTimeout(() => {
         panAnim.setValue({x: 0, y: 50});
         Animated.spring(panAnim, {
