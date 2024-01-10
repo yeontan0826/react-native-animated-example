@@ -8,6 +8,7 @@ export type RootStackParamList = {
   Drawer: undefined;
   Collapse: undefined;
   ProgressBar: undefined;
+  Skeleton: undefined;
 };
 
 export type RootStackProps<RouteName extends keyof RootStackParamList> =
