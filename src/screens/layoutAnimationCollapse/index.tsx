@@ -17,7 +17,7 @@ if (Platform.OS === 'android') {
 }
 
 const LayoutAnimationCollapseScreen = (): JSX.Element => {
-  const [expanded, setExpanded] = useState();
+  const [expanded, setExpanded] = useState<number>();
 
   const onPress = (index: number) => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
