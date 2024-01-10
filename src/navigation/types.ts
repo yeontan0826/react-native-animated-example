@@ -12,6 +12,8 @@ export type RootStackParamList = {
   LayoutAnimation: undefined;
   LayoutAnimationHeader: undefined;
   LayoutAnimationCollapse: undefined;
+  PanResponder: undefined;
+  PanResponderBall: undefined;
 };
 
 export type RootStackProps<RouteName extends keyof RootStackParamList> =

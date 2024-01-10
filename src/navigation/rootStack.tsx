@@ -13,6 +13,8 @@ import SkeletonScreen from '../screens/skeleton';
 import LayoutAnimationScreen from '../screens/layoutAnimation';
 import LayoutAnimationHeaderScreen from '../screens/layoutAnimationHeader';
 import LayoutAnimationCollapseScreen from '../screens/layoutAnimationCollapse';
+import PanResponderScreen from '../screens/panResponder';
+import PanResponderBallScreen from '../screens/panResponderBall';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -45,6 +47,11 @@ const RootStackNavigation = (): JSX.Element => {
       <Stack.Screen
         name="LayoutAnimationCollapse"
         component={LayoutAnimationCollapseScreen}
+      />
+      <Stack.Screen name="PanResponder" component={PanResponderScreen} />
+      <Stack.Screen
+        name="PanResponderBall"
+        component={PanResponderBallScreen}
       />
     </Stack.Navigator>
   );
