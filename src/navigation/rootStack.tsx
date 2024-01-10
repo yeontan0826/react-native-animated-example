@@ -6,6 +6,7 @@ import FadeInOutScreen from '../screens/fadeInOut';
 import TranslateScreen from '../screens/translate';
 import Header from '../components/header';
 import SnackbarScreen from '../screens/snackbar';
+import DrawerScreen from '../screens/drawer';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -16,6 +17,7 @@ const RootStackNavigation = (): JSX.Element => {
       screenOptions={{
         header: Header,
         contentStyle: {backgroundColor: 'white'},
+        animation: 'fade_from_bottom',
       }}>
       <Stack.Screen
         name="AnimationList"
@@ -25,6 +27,7 @@ const RootStackNavigation = (): JSX.Element => {
       <Stack.Screen name="Fade" component={FadeInOutScreen} />
       <Stack.Screen name="Translate" component={TranslateScreen} />
       <Stack.Screen name="Snackbar" component={SnackbarScreen} />
+      <Stack.Screen name="Drawer" component={DrawerScreen} />
     </Stack.Navigator>
   );
 };
