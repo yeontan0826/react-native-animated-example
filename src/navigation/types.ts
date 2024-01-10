@@ -4,6 +4,7 @@ export type RootStackParamList = {
   AnimationList: undefined;
   Fade: undefined;
   Translate: undefined;
+  Snackbar: undefined;
 };
 
 export type RootStackProps<RouteName extends keyof RootStackParamList> =
