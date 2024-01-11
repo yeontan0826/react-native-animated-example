@@ -16,6 +16,7 @@ export type RootStackParamList = {
   PanResponderBall: undefined;
   PanResponderModal: undefined;
   PanResponderSlider: undefined;
+  PanResponderFontSlider: undefined;
 };
 
 export type RootStackProps<RouteName extends keyof RootStackParamList> =
