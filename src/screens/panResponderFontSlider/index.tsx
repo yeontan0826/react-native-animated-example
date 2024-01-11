@@ -102,7 +102,6 @@ const PanResponderFontSliderScreen = (): JSX.Element => {
                 onPress={() => onPress(index)}>
                 <View
                   style={{
-                    borderWidth: 1,
                     width: BOX,
                     height: BOX,
                     justifyContent: 'center',
